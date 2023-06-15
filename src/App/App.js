@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 
-import { Layout } from 'components';
+import { Layout } from 'Layout/Layout';
 
 const Home = lazy(() => import('pages/Home/Home'));
 const Posts = lazy(() => import('pages/Posts/Posts'));
@@ -17,11 +17,12 @@ export function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />}></Route>
         <Route path="/posts" element={<Posts />}></Route>
-        <Route path="/:id" element={<Post />}></Route>
+        <Route path="posts/:postId" element={<Post />}></Route>
         <Route path="/add_post" element={<AddPost />}></Route>
         <Route path="/edit_post" element={<EditPost />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="*" element={<Home />} />
       </Route>
     </Routes>
   );
