@@ -1,0 +1,28 @@
+body {
+  --color-text-active: #ffff00;
+  --color-text-light: #ebd8ff;
+  --color-text-dark: #373737;
+  --color-bg-dark-main: #5736a3;
+  --color-bg-light-main: #bfc9ff;
+  --color-bg-light-btn: #ebd8ff;
+  --color-bg-light-btn-active: #5cd3a8;
+
+  --linear-gradient: linear-gradient(
+    115deg,
+    #471ca9 -1%,
+    #5736a3 54%,
+    #4b2a99 79%
+  );
+  --transition: background-color 300ms linear, transform 300ms ease-in-out;
+  --box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.1),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.07), 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-text-dark);
+
+  background-color: var(--color-bg-light-main);
+}
