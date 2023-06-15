@@ -21,3 +21,8 @@
 - import modern-normalize, styled-components@^5
 - create common.css, variables.css
 - style Header, Footer
+
+4. Forms
+
+- install Formik, Yup
+- create register, login forms
