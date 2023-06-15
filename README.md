@@ -21,3 +21,4 @@
 - import modern-normalize, styled-components@^5
 - create common.css, variables.css
 - style Header, Footer
+-
