@@ -9,7 +9,7 @@ const Register = () => {
       style={{
         maxWidth: 500,
         marginInline: 'auto',
-        marginTop: 50,
+        marginTop: 150,
         padding: 24,
         borderRadius: 8,
         // backgroundColor: 'rgba(87, 54, 163, 0.1)',

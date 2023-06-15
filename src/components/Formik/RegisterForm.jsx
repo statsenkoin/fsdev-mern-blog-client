@@ -11,8 +11,8 @@ import {
 
 const SubmitSchema = Yup.object().shape({
   username: Yup.string(),
-  email: Yup.string().required('Email required'),
-  password: Yup.string().required('Password required'),
+  email: Yup.string().email().required('Email required'),
+  password: Yup.string().required('Password required').min(6),
 });
 
 export const RegisterForm = () => {
