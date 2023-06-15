@@ -26,3 +26,7 @@
 
 - install Formik, Yup
 - create register, login forms
+
+5. Redux, axios
+
+- install Redux, axios
