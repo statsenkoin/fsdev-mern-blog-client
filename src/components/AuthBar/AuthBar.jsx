@@ -5,7 +5,7 @@ export const AuthBar = () => {
   return (
     <AuthBox>
       <User>UserName</User>
-      <NavLinkStyled to="/register">Register</NavLinkStyled>
+      <NavLinkStyled to="/login">Login</NavLinkStyled>
     </AuthBox>
   );
 };
