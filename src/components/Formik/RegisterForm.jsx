@@ -1,4 +1,5 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Formik, Field } from 'formik';
 import * as Yup from 'yup';
 
@@ -8,6 +9,7 @@ import {
   AddContactButton,
   ErrorText,
 } from './Formik.styled';
+import { register } from 'redux/auth/operations';
 
 const SubmitSchema = Yup.object().shape({
   username: Yup.string(),
@@ -16,8 +18,11 @@ const SubmitSchema = Yup.object().shape({
 });
 
 export const RegisterForm = () => {
-  // hooks
-  const handleSubmit = (newUser) => {};
+  const dispatch = useDispatch();
+
+  const handleSubmit = (newUser) => {
+    dispatch(register(newUser));
+  };
 
   return (
     <Formik
@@ -28,9 +33,7 @@ export const RegisterForm = () => {
       }}
       validationSchema={SubmitSchema}
       onSubmit={(values, { resetForm }) => {
-        handleSubmit({
-          ...values,
-        });
+        handleSubmit({ ...values });
         resetForm();
       }}>
       <FormWrapper>

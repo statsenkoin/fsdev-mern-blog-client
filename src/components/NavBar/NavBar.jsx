@@ -8,7 +8,8 @@ export const NavBar = () => {
       <NavLinkStyled to="/" end>
         Logo/Home
       </NavLinkStyled>
-      <NavLinkStyled to="/posts">Posts</NavLinkStyled>
+      {<NavLinkStyled to="/posts">Posts</NavLinkStyled>}
+      {<NavLinkStyled to="/add_post">AddPost</NavLinkStyled>}
     </NavBox>
   );
 };
