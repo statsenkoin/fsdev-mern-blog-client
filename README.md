@@ -26,3 +26,10 @@
 
 - install Formik, Yup
 - create register, login forms
+
+5. Redux, axios
+
+- install Redux, @reduxjs/toolkit, react-redux, axios, redux-persist
+- create redux store (auth slice, operations, selectors)
+- create PersistGate (save token to localstorage)
+- update routes

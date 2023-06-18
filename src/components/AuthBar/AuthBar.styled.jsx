@@ -18,6 +18,9 @@ export const NavLinkStyled = styled(NavLink)`
   text-decoration: none;
   color: var(--color-text-light);
   transition: box-shadow 250ms linear, transform 250ms linear;
+  &.active {
+    color: var(--color-text-active);
+  }
 
   &:hover {
     transform: scale(1.1);
